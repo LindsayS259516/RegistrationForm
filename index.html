@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<link rel="stylesheet" href="form.css">
+
+<head>
+   <title>Registration Form</title>
+	<img src="https://conquestimaging.com/wp-content/uploads/2018/03/Registration-300x300.png"
+	 alt="Register" style="float:right;width:5%;height:5%;">
+</head>
+
+<body>
+
+  <form action="registration_list.php">
+    <div class="container">
+      <h1>Registration</h1>
+      <p>Please fill in this form to register.</p>
+      <hr>
+
+      <label for="fname"> First name:</label><br>
+      <input type="text" placeholder="first name" name="firstname" required><br>
+
+      <label for="lname"> Last name:</label><br>
+      <input type="text" placeholder="last name" name="lastname" required><br>
+
+      <label for="street_a">Street Address:</label><br>
+      <input type="text" placeholder="street address" name="street" required><br>
+
+      <label for="suburb_a">Suburb:</label><br>
+      <input type="text" placeholder="suburb" name="suburb" required><br>
+
+      <label>State:</label>
+      <select id = "state">
+           <option value = "1">ACT</option>
+           <option value = "2">NSW</option>
+           <option value = "3">NT</option>
+           <option value = "4">QLD</option>
+           <option value = "5">SA</option>
+           <option value = "6">TAS</option>
+           <option value = "7">VIC</option>
+           <option value = "8">WA</option>
+      </select>    
+
+    
+      <label for="postcode_a">&emsp;Postcode:</label>
+      <input type="number" placeholder="postcode" name="postcode" min="0200" max="9999" required><br>
+
+       <label for="email_a">Email:</label><br>
+      <input type="email" placeholder="email address" name="email" required><br>
+
+      <label for="tel_a">Phone Number:</label><br>
+      <input type="number" placeholder="phone" name="tel" required><br>
+
+      <label for="bday_a">Date of Birth:</label><br>
+      <input type="date" name="bday" required><br>
+
+      <hr>
+    
+      <input type = "reset" />
+      <input type = "submit" />
+
+  
+  </div>
+  
+</form>
+</body>
